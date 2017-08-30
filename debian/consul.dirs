@@ -1,0 +1,3 @@
+var/lib/consul
+usr/share/consul
+etc/consul.d

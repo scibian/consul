@@ -1,3 +1,30 @@
+consul (0.6.4-2~c9+4) calibre9; urgency=medium
+
+  * set valid shell at service unit level
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Wed, 30 Aug 2017 10:14:02 +0200
+
+consul (0.6.4-2~c9+3) calibre9; urgency=medium
+
+  * Add dep of consul on monitoring plugins
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Tue, 10 Jan 2017 10:39:42 +0100
+
+consul (0.6.4-2~c9+2) calibre9; urgency=medium
+
+  * Create directory /var/lib/consul
+  * Allow user consul to have a shell
+  * Add systemd support.
+  * Create directories in consul.dirs instead of debian/rules.
+
+ -- Ana Guerrero <ana-externe.guerrero@edf.fr>  Fri, 09 Sep 2016 11:21:10 +0200
+
+consul (0.6.4-2~c9+1) calibre9; urgency=medium
+
+  * Build for Calibre 9 (with cowbuilder).
+
+ -- Ana Guerrero <ana-externe.guerrero@edf.fr>  Mon, 22 Aug 2016 10:09:07 +0200
+
 consul (0.6.4-2~xenial1~ppa1) xenial; urgency=low
 
   * No-change build for Xenial.

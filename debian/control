@@ -9,13 +9,16 @@ Standards-Version: 3.9.8
 Build-Depends: adduser,
                debhelper (>= 9),
                dh-systemd,
-               git,
                golang-go (>= 2:1.6) | golang-1.6-go
 
 Package: consul
 Architecture: any
 Suggests: consul-web-ui
-Depends: adduser, ${misc:Depends}, ${shlibs:Depends}
+Depends:
+ adduser,
+ ${misc:Depends},
+ ${shlibs:Depends},
+ monitoring-plugins-basic
 Description: service discovery and configuration tool - main package
  Consul is a tool for service discovery and configuration. Consul is
  distributed, highly available, and extremely scalable. Consul provides

@@ -1,12 +1,6 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
-# Sample debian/rules that uses debhelper.
-# This file was originally written by Joey Hess and Craig Small.
-# As a special exception, when this file is copied by dh-make into a
-# dh-make output file, you may use that output file without restriction.
-# This special exception was added by Craig Small in version 0.37 of dh-make.
 
-# Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
 override_dh_auto_clean:
@@ -20,17 +14,9 @@ override_dh_auto_build:
 		-ldflags "-X main.GitCommit=$${GIT_COMMIT} -X main.GitDescribe=$${GIT_DESCRIBE}" \
 		-o usr/bin/consul github.com/hashicorp/consul
 
-override_dh_installchangelogs:
-	dh_installchangelogs CHANGELOG.md
-
 override_dh_auto_test:
 
-override_dh_auto_install:
-	mkdir -p usr/share/consul
-	mkdir -p etc
-	cp -a debian/consul.d etc
-
 %:
-	dh $@
+	dh $@ --systemd
 
 .PHONY: build

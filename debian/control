@@ -1,10 +1,10 @@
 Source: consul
 Section: utils
 Priority: optional
-Maintainer: Andrea Bernardo Ciddio <bcandrea@gmail.com>
+Maintainer: Scibian Project <packaging@scibian.org>
 Homepage: http://www.consul.io
-Vcs-Git: https://github.com/hashicorp/consul.git
-Vcs-Browser: https://github.com/hashicorp/consul
+Vcs-Git: https://github.com/scibian/consul.git
+Vcs-Browser: https://github.com/scibian/consul
 Standards-Version: 3.9.8
 Build-Depends: adduser,
                debhelper (>= 9),

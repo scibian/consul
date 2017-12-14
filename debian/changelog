@@ -1,3 +1,9 @@
+consul (0.6.4-2sci8u1) scibian8; urgency=medium
+
+  * Scibian8 rebuild.
+
+ -- Thomas Hamel <thomas-externe.hamel@edf.fr>  Thu, 14 Dec 2017 15:07:45 +0100
+
 consul (0.6.4-2~c9+4) calibre9; urgency=medium
 
   * set valid shell at service unit level
